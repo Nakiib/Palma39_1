@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Palma39_1">
         <activity
+            android:name=".Darse_Alta"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
