@@ -32,8 +32,8 @@ public class Darse_Alta extends AppCompatActivity {
         setContentView(R.layout.activity_darse_alta);
         // inicializamos variables
         FechaRegistro = findViewById(R.id.FechaRegistro);
-        Correo = findViewById(R.id.Correo);
-        Password = findViewById(R.id.Password);
+        Correo = findViewById(R.id.CorreoIn);
+        Password = findViewById(R.id.PasswordIn);
         Nombres = findViewById(R.id.Nombre);
         Apellidos = findViewById(R.id.Apellidos);
         Edad =findViewById(R.id.Edad);
@@ -73,5 +73,7 @@ public class Darse_Alta extends AppCompatActivity {
     }
 
     // metodo para registrar administradores
-    private void RegistroAdministradores(EditText correo, String pass) {}
+    private void RegistroAdministradores(EditText correo, String pass) {
+
+    }
 }

@@ -2,13 +2,14 @@
     <string name="app_name">Palma39_1</string>
 
 
-<!--    REGISTRO USUARIO-->
+    <!--    REGISTRO USUARIO-->
     <string name="RegistrTxt">PALMA 39</string>
-    <string name="Correo">Corro Electrónico</string>
+    <string name="Correo">Correo Electrónico</string>
     <string name="Password">Contraseña</string>
     <string name="Nombre">Nombre</string>
     <string name="Apellido">Apellidos</string>
     <string name="Edad">Edad</string>
     <string name="FechaRegistro">Fecha de Registro</string>
     <string name="Registrar">Registrar</string>
+    <string name="Iniciar_Sesion">Iniciar sesion</string>
 </resources>
