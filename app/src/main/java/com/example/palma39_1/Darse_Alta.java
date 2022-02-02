@@ -74,6 +74,6 @@ public class Darse_Alta extends AppCompatActivity {
 
     // metodo para registrar administradores
     private void RegistroAdministradores(EditText correo, String pass) {
-
+        System.out.println("chupala");
     }
 }
