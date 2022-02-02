@@ -38,7 +38,7 @@ public class IniciarSesion extends AppCompatActivity {
                     PasswordIn.setError("Contraseña debe ser mayor o igual que seis");
                     PasswordIn.setFocusable(true);
                 }else {
-
+                    System.out.println("chupala");
                 }
             }
         });
