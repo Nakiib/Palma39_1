@@ -1,6 +1,7 @@
 package com.example.palma39_1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Darse_Alta extends AppCompatActivity {
@@ -21,6 +23,7 @@ public class Darse_Alta extends AppCompatActivity {
     TextView FechaRegistro;
     EditText Correo, Password, Nombres, Apellidos, Edad;
     Button Registrar;
+
 
     FirebaseAuth auth; // lo creas para poder crear cuenta  atraves de correo electronico
 

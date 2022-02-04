@@ -1,30 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="121dp"
-        android:layout_marginTop="94dp"
-        android:onClick="registrar"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button2"
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Registrar"
+            android:layout_weight="1"
+            android:onClick="registrar"
+            />
+        <Button
+            android:id="@+id/btnLGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Iniciar_Sesion"
+            android:layout_weight="1"
+            android:onClick="iniciar_sesion"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="117dp"
-        android:layout_marginTop="96dp"
-        android:onClick="iniciar_sesion"
-        android:text="Inicar Sesion"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="HOLA"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnLGrid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grid"
+            android:layout_marginStart="32dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
